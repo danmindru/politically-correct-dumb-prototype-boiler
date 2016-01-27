@@ -1,2 +1,21 @@
-# politically-correct-dumb-prototype-boiler
-☃️ Yet another attempt to make some kind of framework-thing to prototype other things.
+# Dumb(ish) Prototype Boiler
+Get that prototype out!
+
+## List of tools
+🔘 SASS/LESS (add a .scss/.less file in `./src`)
+🔘 Suzy UI
+🔘 Webpack
+    ✅ PostCSS
+    ✅ Babel.js
+    ✅ ESLint
+    ✅ Watches / Reloads your code.
+    ✅ That's it, make that prototype already.
+
+
+## Running
+```bash
+npm run protopype
+```
+
+
+🔞 Built using node `v5.5.0`, but will likely run on any version (no funny stuff going on, promise 🖖).
