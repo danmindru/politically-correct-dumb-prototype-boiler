@@ -14,7 +14,7 @@ Get that prototype out!
 
 ## Running
 ```bash
-npm run protopype
+npm run prototype
 ```
 
 
