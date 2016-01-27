@@ -4,7 +4,7 @@
   "description": "Yet another attempt to make some kind of framework-thing to prototype other things.",
   "main": "index.js",
   "scripts": {
-    "prototype": "webpack --verbose --colors --display-error-details --config config/webpack.js"
+    "proto": "node config/webpack.js --hot --inline"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "clean-webpack-plugin": "^0.1.6",
     "postcss-loader": "^0.8.0",
     "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.6.4"
   }
 }

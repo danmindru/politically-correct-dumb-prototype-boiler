@@ -5,6 +5,8 @@ Get that prototype out!
 🔘 SASS/LESS (add a .scss/.less file in `./src`)
 🔘 Suzy UI
 🔘 Webpack
+    ✅ Hot reload
+    ✅ Autoprefixer 
     ✅ PostCSS
     ✅ Babel.js
     ✅ ESLint
