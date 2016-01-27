@@ -1,0 +1,28 @@
+{
+  "name": "politically-correct-dumb-prototype-boiler",
+  "version": "0.0.1",
+  "description": "Yet another attempt to make some kind of framework-thing to prototype other things.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danmindru/politically-correct-dumb-prototype-boiler.git"
+  },
+  "keywords": [
+    "prototype",
+    "framework",
+    "boiler"
+  ],
+  "author": "Dan Mindru <mindrudan@gmail.com> (http://mindrudan.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danmindru/politically-correct-dumb-prototype-boiler/issues"
+  },
+  "homepage": "https://github.com/danmindru/politically-correct-dumb-prototype-boiler#readme",
+  "devDependencies": {
+    "postcss-loader": "^0.8.0",
+    "webpack": "^1.12.12"
+  }
+}
