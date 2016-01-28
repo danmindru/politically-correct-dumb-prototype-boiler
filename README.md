@@ -2,6 +2,7 @@
 Get prototypes out like there's no tomorrow.
 
 ## List of tools
+- ✅ React (no fancy stuff)
 - ✅ SASS support
 - ✅ LESS support
 - ✅ PostCSS
@@ -9,7 +10,7 @@ Get prototypes out like there's no tomorrow.
 - ✅ Webpack:
     - ✅ Autoprefixer
     - ✅ Babel.js
-    - ✅ Watch / hot reload
+    - ✅ Watch / reload (no fancy stuff)
     - ✅ ESLint
     - Make that prototype already 🙌! 
 

@@ -1,4 +1,5 @@
-{ "extends": "eslint-config-airbnb",
+{
+  "extends": "eslint-config-airbnb",
   "env": {
     "browser": true,
     "node": true,
@@ -22,6 +23,7 @@
     "quotes": [2, "single", "avoid-escape"], //enable both quote styles,
     "eol-last": 0
   },
+  "plugins": ["react", "import"],
   "globals": {
     "console": true,
     "Promise": true
