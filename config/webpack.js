@@ -27,6 +27,7 @@ var webpackConfig = {
   entry: {
     'main': [
       'webpack-hot-middleware/client?path=http://' + host + ':' + port + '/__webpack_hmr&reload=true',
+      './styles/index.js',
       './index.js'
     ]
   },
@@ -38,6 +39,13 @@ var webpackConfig = {
   },
 
   module: {
+    preLoaders: [
+      {
+        test: /\.jsx$/,
+        loader: "eslint-loader",
+        exclude: /node_modules/
+      }
+    ],
     loaders: [
       {
         test: /\.jsx?$/,
@@ -46,6 +54,10 @@ var webpackConfig = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       },
       {
         test: /\.css$/,
@@ -62,7 +74,16 @@ var webpackConfig = {
     ]
   },
 
- postcss: function () {
+  progress: true,
+  resolve: {
+    modulesDirectories: [
+      'src',
+      'node_modules'
+    ],
+    extensions: ['', '.json', '.js', '.jsx']
+  },
+
+  postcss: function () {
     return {
       defaults: [autoprefixer, simpleExtend, flexbugs, reporter],
       cleaner:  [autoprefixer({ browsers: [] })]

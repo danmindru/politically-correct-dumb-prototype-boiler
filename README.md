@@ -1,11 +1,12 @@
 # Dumb(ish) prototype builder thing
-Get that prototype out!
+Get prototypes out like there's no tomorrow.
 
 ## List of tools
-- ✅ SASS (+[Susy](https://github.com/oddbird/susy))
-- ✅ LESS
+- ✅ SASS support
+- ✅ LESS support
+- ✅ PostCSS
+- ✅ [Flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid) + [normalize.css](https://github.com/necolas/normalize.css)
 - ✅ Webpack:
-    - ✅ PostCSS
     - ✅ Autoprefixer
     - ✅ Babel.js
     - ✅ Watch / hot reload
@@ -16,6 +17,13 @@ Get that prototype out!
 ```bash
 npm run proto
 ```
+
+## Linting
+```bash
+npm run lint
+```
+
+*Webpack lints automatically on save. To disable it, comment out the `preLoaders` part in `config/webpack.js`.*
 
 
 ## Misc
