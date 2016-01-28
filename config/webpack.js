@@ -43,20 +43,18 @@ var webpackConfig = {
       {
         test: /\.jsx$/,
         loader: "eslint-loader",
-        exclude: /node_modules/
+        exclude: /(node_modules|bower_components)/,
       }
     ],
     loaders: [
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015']
-        }
+        loader: 'babel-loader'
       },
       {
         test: /\.json$/,
+        exclude: /(node_modules|bower_components)/,
         loader: 'json'
       },
       {
@@ -80,7 +78,7 @@ var webpackConfig = {
       'src',
       'node_modules'
     ],
-    extensions: ['', '.json', '.js', '.jsx']
+    extensions: ['', '.json', '.js', '.jsx', '.css']
   },
 
   postcss: function () {
@@ -92,7 +90,8 @@ var webpackConfig = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Prototype that thing like there\'s no tomorrow'
+      title: 'Prototype that thing like there\'s no tomorrow',
+      template: "index.html"
     }),
     new webpack.HotModuleReplacementPlugin()
   ]
