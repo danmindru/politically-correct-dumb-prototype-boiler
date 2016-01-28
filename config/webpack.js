@@ -20,7 +20,7 @@ var webpackConfig = {
   context: path.resolve(__dirname, '../src'),
   entry: {
     'main': [
-      'webpack-hot-middleware/client?path=http://' + host + ':' + port + '/__webpack_hmr',
+      'webpack-hot-middleware/client?path=http://' + host + ':' + port + '/__webpack_hmr&reload=true',
       './index.js'
     ]
   },
@@ -33,9 +33,26 @@ var webpackConfig = {
 
   module: {
     loaders: [
-      {test: /\.css$/, loaders: ['style', 'css']},
-      {test: /\.scss$/, loaders: ["style", "css", "sass"]},
-      {test: /\.less$/, loaders: ["style", "css", "less"]}
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        }
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css']
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
+      {
+        test: /\.less$/,
+        loaders: ["style", "css", "less"]
+      }
     ]
   },
 
@@ -60,7 +77,7 @@ var serverOptions = {
   lazy: false,
   filename: "index.js",
   headers: {'Access-Control-Allow-Origin': '*'},
-  stats: { colors: true },
+  stats: { colors: true }
 };
 
 var compiler = webpack(webpackConfig);
