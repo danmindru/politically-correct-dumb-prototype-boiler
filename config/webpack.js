@@ -4,6 +4,12 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var WebpackDevServer = require('webpack-dev-server');
 
+/* PostCSS stuff */
+var autoprefixer = require('autoprefixer');
+var flexbugs = require('postcss-flexbugs-fixes');
+var reporter = require('postcss-reporter');
+var simpleExtend = require('postcss-simple-extend');
+
 /*
  * Settings
  */
@@ -43,22 +49,29 @@ var webpackConfig = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loaders: ['style', 'css', 'postcss']
       },
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        loaders: ['style', 'css', 'postcss', 'sass']
       },
       {
         test: /\.less$/,
-        loaders: ["style", "css", "less"]
+        loaders: ['style', 'css', 'postcss', 'less']
       }
     ]
   },
 
+ postcss: function () {
+    return {
+      defaults: [autoprefixer, simpleExtend, flexbugs, reporter],
+      cleaner:  [autoprefixer({ browsers: [] })]
+    };
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Prototype that thing like there's no tomorrow"
+      title: 'Prototype that thing like there\'s no tomorrow'
     }),
     new webpack.HotModuleReplacementPlugin()
   ]
@@ -75,7 +88,7 @@ var serverOptions = {
   quiet: true,
   noInfo: false,
   lazy: false,
-  filename: "index.js",
+  filename: 'index.js',
   headers: {'Access-Control-Allow-Origin': '*'},
   stats: { colors: true }
 };

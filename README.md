@@ -1,23 +1,22 @@
-# Dumb(ish) Prototype Boiler
+# Dumb(ish) prototype builder thing
 Get that prototype out!
 
 ## List of tools
-🔘 SASS/LESS (add a .scss/.less file in `./src`)
-🔘 Suzy UI
-🔘 Webpack
-    ✅ Hot reload
-    ✅ Autoprefixer 
-    ✅ PostCSS
-    ✅ Babel.js
-    ✅ ESLint
-    ✅ Watches / Reloads your code.
-    ✅ That's it, make that prototype already.
+- ✅ SASS (+[Susy](https://github.com/oddbird/susy))
+- ✅ LESS
+- ✅ Webpack:
+    - ✅ PostCSS
+    - ✅ Autoprefixer
+    - ✅ Babel.js
+    - ✅ Watch / hot reload
+    - ✅ ESLint
+    - Make that prototype already 🙌! 
 
-
-## Running
+## Run
 ```bash
 npm run proto
 ```
 
 
+## Misc
 🔞 Built using node `v5.5.0`, but will likely run on any version (no funny stuff going on, promise 🖖).

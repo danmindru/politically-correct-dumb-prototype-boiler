@@ -4,3 +4,6 @@
  * Remember to `require` this file to use it in a module.
  *
  */
+ body{
+  display:flex;
+ }
