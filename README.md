@@ -16,7 +16,7 @@ Get that prototype out!
 
 ## Running
 ```bash
-npm run prototype
+npm run proto
 ```
 
 

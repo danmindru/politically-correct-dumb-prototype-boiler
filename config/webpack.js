@@ -24,14 +24,21 @@ var webpackConfig = {
       './index.js'
     ]
   },
+
   output: {
     path: distPath,
     filename: 'index.js',
     publicPath: publicPath
   },
-  loaders: [
-    {test: /\.css$/, loaders: ['style', 'css']},
-  ],
+
+  module: {
+    loaders: [
+      {test: /\.css$/, loaders: ['style', 'css']},
+      {test: /\.scss$/, loaders: ["style", "css", "sass"]},
+      {test: /\.less$/, loaders: ["style", "css", "less"]}
+    ]
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       title: "Prototype that thing like there's no tomorrow"
