@@ -7,9 +7,9 @@ export default React.createClass(
     render: function(){
       return (
         <div>
-          <h1>BOOM!</h1>
-          <p>How's that prototype looking?</p>
-          <Link to={'about'}>Take me somewhere else</Link>
+          <h1>Hey!</h1>
+          <p>About that prototype...</p>
+          <Link to={'/'}>Back home</Link>
         </div>
       );
     }

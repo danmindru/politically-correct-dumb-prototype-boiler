@@ -1,5 +1,5 @@
 # Dumb(ish) prototype builder thing
-Get prototypes out like there's no tomorrow.
+Get prototypes out like there's no tomorrow. Using Photoshop, Illustrator, Sketch and the like was fun while it lasted. Let's face it, they don't work any more. Prototype web apps on the web, for the web.
 
 ## List of tools
 - ✅ React (no fancy stuff)
