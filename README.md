@@ -14,6 +14,11 @@ Get prototypes out like there's no tomorrow. Using Photoshop, Illustrator, Sketc
     - ✅ ESLint
     - Make that prototype already 🙌! 
 
+## Setup
+```bash
+npm i
+```
+
 ## Run
 ```bash
 npm run proto
