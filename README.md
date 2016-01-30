@@ -34,3 +34,6 @@ npm run lint
 
 ## Misc
 🔞 Built using node `v5.5.0`, but will likely run on any version (no funny stuff going on, promise 🖖).
+
+## License
+[MIT](https://github.com/danmindru/politically-correct-dumb-prototype-boiler/blob/master/LICENSE)
