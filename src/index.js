@@ -5,7 +5,12 @@ import { App, About } from "components";
 
 
 ReactDOM.render(
-  <Router history={require('history/lib/createBrowserHistory')()}>
+  <Router>
+    {
+     /*
+      * <Router history={require('history/lib/createBrowserHistory')()}> needs the server to return index.html if you fancy HTML5 mode on.
+      */
+    }
     <Route path="/" component={App}></Route>
     <Route path="about" component={About}></Route>
   </Router>,
