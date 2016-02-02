@@ -9,8 +9,8 @@ Get prototypes out like there's no tomorrow. Using Photoshop, Illustrator, Sketc
 - ✅ [Flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid) + [normalize.css](https://github.com/necolas/normalize.css)
 - ✅ Webpack:
     - ✅ Autoprefixer
-    - ✅ Babel.js
-    - ✅ Watch / reload (no fancy stuff)
+    - ✅ Babel 6
+    - ✅ Watch / hot reload (no fancy stuff)
     - ✅ ESLint
     - Make that prototype already 🙌! 
 
