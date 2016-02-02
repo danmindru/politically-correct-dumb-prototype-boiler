@@ -1,6 +1,6 @@
 {
   "name": "politically-correct-dumb-prototype-boiler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yet another attempt to make some kind of framework-thing to prototype other things.",
   "main": "index.js",
   "scripts": {
